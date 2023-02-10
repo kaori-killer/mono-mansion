@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mono mansion retouch</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../js/bridge.js"></script>
+    <link rel="stylesheet" href="./../App.css">
+</head>
+<body>
+    <div class="App">
+        <header class="MyHeader"></header>
+        <div class="OrderDetail">
+            <section>
+                <div class="img_wrapper">
+                    <img src="./../../public/assets/1인촬영.png" />
+                </div>
+            </section>
+            <section>
+                <div class="info_wrapper">
+                    <p>현재 선택하신 상품은 <b>1인촬영 리터치</b>입니다.</p>
+                </div>
+                <div class="selection_wrapper">
+                    <form id="selection_form">
+                        <p>옵션 선택</p>
+                        <select id="selection_value">
+                            <option value="">[필수] 선택하세요</option>
+                            <option value="5000">기본보정 5,000원</option>
+                            <option value="10000">고급보정 10,000원</option>
+                        </select>
+                        <input class="input_file" type="file" required/>
+                        <button class="submit">구매진행</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer class="MyFooter"></footer>
+    </div>
+
+    <script>
+        const selectionForm = document.getElementById("selection_form");
+        console.log(selectionForm);
+        function handleSubmit(e){
+            if($("#selection_value").val() === "" ){
+                alert("상품의 선택옵션을 선택해 주십시오.");
+                e.preventDefault();
+            }
+        }
+        selectionForm.addEventListener("submit", handleSubmit);
+    </script>
+</body>
+</html>
