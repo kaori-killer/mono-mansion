@@ -56,6 +56,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     white-space: nowrap;
+    border: none;
 
     cursor: pointer;
 }
@@ -106,6 +107,13 @@ body {
     }
 }
 
+
+@media (min-width : 350px) {
+    .OrderDetail .img_wrapper img  {
+        width: 300px;
+    }
+}
+
 .OrderDetail .info_wrapper {
     text-align: left;
 }
@@ -132,6 +140,7 @@ body {
     font-size: 15px;
 
     height: 50px;
+    width: 295px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -148,6 +157,7 @@ body {
     padding-bottom: 10px;
     padding-left: 5px;
     margin-bottom: 10px;
+    border: none;
 }
 
 .OrderDetail .selection_wrapper .submit {
@@ -160,6 +170,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
+    border: none;
 }
 
 .HowToUse {
@@ -168,20 +179,14 @@ body {
     box-sizing: border-box;
 }
 
-/* 화난다. */
-/* .HowToUse .article {
-    box-sizing: border-box;
-    padding-left: 5px;
-} */
-
 .HowToUse p {
-    /* margin왜 자꾸 기본값;; */
     margin: 0px;
 }
 
 .HowToUse section {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 2px;
 }
 
 .HowToUse .title {
@@ -209,6 +214,12 @@ body {
     padding-bottom: 5px;
 
     height: 20px;
+}
+
+@media (min-width : 350px) {
+    .HowToUse .Example  {
+        width: 350px;
+    }
 }
 
 .HowToUse .Example p {
