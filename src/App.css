@@ -57,8 +57,10 @@ body {
     font-weight: bold;
     white-space: nowrap;
     border: none;
-
     cursor: pointer;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .MyButton button:hover {
@@ -187,13 +189,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 2px;
-}
-
-.HowToUse .title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
-    
 }
 
 .HowToUse .contents p {
